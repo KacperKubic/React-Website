@@ -1,0 +1,95 @@
+.location{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+.location .top{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    bottom: 0;
+    margin-top: 150px;
+    box-sizing: border-box;
+}
+
+
+.location .bottom{
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.location .bottom .map{
+    height: 500px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    box-shadow: 0 4px 40px 0 rgba(0,0,0,0.4), 0 6px 40px 0 rgba(0,0,0,0.4);
+}
+
+.location .arrow-up{
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-220%, -50%);
+}
+
+.location .arrow-up span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(-135deg);
+    margin: -20px;
+    animation: scrollUp 2s infinite;
+}
+
+@keyframes scrollUp{
+    0%{
+        opacity: 0;
+        transform: rotate(-135deg) translate(-20px, -20px)
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        transform: rotate(-135deg) translate(20px, 20px);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .location .top{
+        height: 100vh;
+    }
+
+    .location .bottom{
+        display: none;
+    }
+
+    .map #gmap_canvas{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .location .top{
+        font-size: 15px;
+    }
+}

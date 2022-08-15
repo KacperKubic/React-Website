@@ -1,0 +1,143 @@
+.aboutOffer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutOffer .content{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+.aboutOffer .content h1{
+    font-weight: 400;
+    font-size: 70px;
+    color: black;
+    height: 30px;
+    display: flex;
+    text-align: left;
+    transform: translateY(-50px);
+}
+
+.aboutOffer .image{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.aboutOffer .image img{
+    margin: auto;
+    width: 90%;
+    height: 70vh;
+    box-shadow: 0 4px 40px 0 rgba(0,0,0,0.4), 0 6px 40px 0 rgba(0,0,0,0.4);
+}
+
+.aboutOffer .content .arrow-down{
+    position: absolute;
+    top: 190%;
+    left: 50%;
+    transform: translate(-190%, -50%);
+}
+
+.aboutOffer .content .arrow-down span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: scrollDown 2s infinite;
+}
+
+@keyframes scrollDown{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.aboutOffer .content .arrow-up{
+    position: absolute;
+    top: 118%;
+    left: 50%;
+    transform: translate(-118%, -50%);
+}
+
+.aboutOffer .content .arrow-up span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(-135deg);
+    margin: -20px;
+    animation: scrollUp 2s infinite;
+}
+
+@keyframes scrollUp{
+    0%{
+        opacity: 0;
+        transform: rotate(-135deg) translate(-20px, -20px)
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        transform: rotate(-135deg) translate(20px, 20px);
+    }
+}
+
+
+@media screen and (max-width: 1360px) {
+    .aboutOffer .content{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }    
+
+    .aboutOffer .image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .aboutOffer .content h1{
+        font-size: 47px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .aboutOffer .content h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .aboutOffer .content h1{
+        font-size: 30px;
+    }
+}

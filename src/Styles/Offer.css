@@ -1,0 +1,174 @@
+.offer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerCategory{
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.offerCategory .category{
+    border-radius: 15px;
+    width: 350px;
+    height: 600px;
+    margin: 20px;
+    box-shadow: 0px 3px 45px rgba(0, 0, 0, 0.2);
+}
+
+.offerCategory .category:hover{
+    box-shadow: 0px 3px 45px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.offerCategory .category div{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 520px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offerCategory .category h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.offerCategory a{
+    color: #000000;
+}
+
+
+@media screen and (max-width: 1570px) {
+    .offerCategory{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .offerCategory .category{
+        width: 500px;
+        height: 320px;
+        margin: 3px;
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .offerCategory .category div{
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .offerCategory .category h2{
+        margin-top: 20px;
+    }
+
+    #repiles{
+        background-position: top; 
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .offerCategory .category{
+        width: 400px;
+        height: 300px;
+        margin: 3px;
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .offerCategory .category div{
+        height: 240px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .offerCategory .category h2{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .offerCategory .category{
+        width: 330px;
+        height: 270px;
+    }
+
+    .offerCategory .category div{
+        height: 230px;
+    }
+
+    .offerCategory .category h2{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .offer{
+        height: 100%;
+    }
+    .offerCategory{
+        grid-template-columns: 1fr;
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    .offerCategory .category{
+        width: 400px;
+        height: 600px;
+        margin: 15px;
+    }
+
+    .offerCategory .category div{
+        height: 530px;
+    }
+
+    .offerCategory .category h2{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .offerCategory .category{
+        width: 290px;
+        height: 550px;
+    }
+
+    .offerCategory .category div{
+        height: 490px;
+    }
+
+    .offerCategory .category h2{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .offerCategory .category{
+        width: 240px;
+        height: 400px;
+    }
+
+    .offerCategory .category div{
+        height: 350px;
+    }
+
+    .offerCategory .category h2{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+}
