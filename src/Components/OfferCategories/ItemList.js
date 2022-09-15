@@ -1,3 +1,4 @@
+//Images
 import Spider1 from './ItemImages/spider1.jpg'
 import Spider2 from './ItemImages/spider2.jpg'
 import Spider3 from './ItemImages/spider3.jpg'
@@ -24,7 +25,7 @@ import Eq3 from './ItemImages/eq3.jpg'
 import Eq4 from './ItemImages/eq4.jpg'
 import Eq5 from './ItemImages/eq5.jpg'
 
-
+//Spider list
 export const spiders = [
     {
         name: 'Mexican Redknee Tarantula',
@@ -64,6 +65,7 @@ export const spiders = [
     },
 ]
 
+//Reptile list
 export const reptiles = [
     {
         name: 'Bearded dragon',
@@ -97,6 +99,7 @@ export const reptiles = [
     },
 ]
 
+//Amphibians list
 export const amphibians = [
     {
         name: "Bell's Horned Frog",
@@ -120,6 +123,7 @@ export const amphibians = [
     },
 ]
 
+//Equipment list
 export const equipment = [
     {
         name: 'Terrarium 30x30x35',

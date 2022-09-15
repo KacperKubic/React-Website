@@ -8,7 +8,9 @@ const Offer = () => {
     return (
         <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity:0}}>
             <div className='offer'>
+                {/*This motion div from framer-motion react liblary makes all the divs slide from the bottom to the top of the screen*/}
                 <motion.div initial={{y: 200}} animate={{y:10}} transition={{delay: 0.2, type: 'spring', stiffness: 200}}>
+                    {/*Four divs that are links to different category page*/}
                     <div className='offerCategory'>
                         <Link to='/category/spiders'>
                             <div className='category'>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../Styles/NotFound.css';
 
+//This component is displayed if user tries to reach route that is not defined in the app.js file
 const NotFound = () => {
     return (  
         <div className='notFound'>

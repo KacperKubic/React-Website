@@ -6,6 +6,8 @@ const AboutOffer = () => {
     return ( 
         <div id='aboutOffer' className='aboutOffer'>
             <div className='content'>
+                {/*Span styled as an arrow that is a link to another component.
+                With the help of react-scroll it smoothy scrolls down the the component placed above this component*/}
                 <Link to='aboutUs' spy={true} smooth={true} offset={0} duration={500}>
                     <div className='arrow-up'>
                         <span></span>
@@ -16,6 +18,8 @@ const AboutOffer = () => {
                     We also work with proffesional delivery team that is trained and experienced in delivering leaving animals.
                     Beside that we offer top quality terrariums and other useful equipment.
                 </p>
+                {/*Span styled as an arrow that is a link to another component.
+                With the help of react-scroll it smoothy scrolls down the the component placed below this component*/}
                 <Link to='location' spy={true} smooth={true} offset={40} duration={500}>
                     <div className='arrow-down'>
                         <span></span>
@@ -23,7 +27,7 @@ const AboutOffer = () => {
                 </Link>
             </div>
             <div className='image'>
-                <img src={Delivery}/>
+                <img src={Delivery} alt="Delivery guy giving a box to someone else"/>
             </div>
         </div>
      );

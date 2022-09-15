@@ -8,6 +8,8 @@ const OfferCategory = () => {
     return ( 
         <div className='offerCategories'>
             <div className='itemList'>
+                {/*Depending of the category that is taken from the page URL with useParams hook 
+                it will map through a different array of objects from the ItemList file and display a ListItem component for each of them*/}
                  {category === 'spiders' && spiders.map((listItem, key) => {
                     return <ListItem key={key} image={listItem.image} name={listItem.name} price={listItem.price}/>
                 })}

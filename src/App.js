@@ -15,7 +15,9 @@ function App() {
   return (
     <div className='App'>
       <Navbar/>
+      {/* Animate Presence make the component to animate out when it's removed from the React tree */}
       <AnimatePresence exitBeforeEnter>
+        {/*Routes to different components*/}
         <Routes location={location} key={location.pathname}>
           <Route exact path='/' element={<Home/>} />
           <Route path='/offer' element={<Offer/>}/>
