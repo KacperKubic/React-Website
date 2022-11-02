@@ -1,14 +1,15 @@
 import './App.css';
 import Navbar from './Components/Navbar'
-import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
 import About from './Components/About';
 import Footer from './Components/Footer';
 import Offer from './Components/Offer';
-import { AnimatePresence } from 'framer-motion';
 import OfferCategory from './Components/OfferCategories/OfferCategory';
 import NotFound from './Components/NotFound';
+import { AnimatePresence } from 'framer-motion';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Cart from './Components/Cart';
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/category/:category' element={<OfferCategory/>}/>
+          <Route path='/cart' element={<Cart/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </AnimatePresence>

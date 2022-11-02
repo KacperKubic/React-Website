@@ -9,7 +9,7 @@ const Home = () => {
             <div className='homePage' style={{backgroundImage: `url(${BackgroundImage})`}}>
                 <div className='homePage-content'>
                     <h1>Terra Shop</h1>
-                    <p>Exotic animals? Porffesional equipment?</p>
+                    <p>Exotic animals? Professional equipment?</p>
                     <p>We got that all!</p>
                     <Link to='/offer'>
                         <button className='button'>SEE OUR OFFER</button>

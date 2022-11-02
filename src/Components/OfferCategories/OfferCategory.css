@@ -27,8 +27,7 @@
 
 .itemList .listItem:hover{
     box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
-    transform: scale(1.05);
-    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .itemList .listItem div{
@@ -41,10 +40,38 @@
     background-position: center;
 }
 
+.itemList .listItem .price{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    justify-content: space-between;
+}
+
+
+.itemList button{
+    margin-right: 20px;
+    margin-top: 5px;
+    background-color: inherit;
+    border: none;
+}
+
+.itemList .add:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.itemList .delate:hover{
+    color: red;
+    cursor: pointer;
+}
+
 .itemList .listItem h3,
 .itemList .listItem p{
     margin-top: 5px;
     margin-left: 20px;
+    width: auto;
 }
 
 @media screen and (max-width: 1300px){

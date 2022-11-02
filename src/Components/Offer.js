@@ -2,6 +2,8 @@ import '../Styles/Offer.css';
 import { Link } from 'react-router-dom';
 import spiders from '../Images/spiders.jpg';
 import reptiles from '../Images/reptiles.jpg';
+import amphibians from '../Images/amphibians.jpg';
+import equipment from '../Images/equipment.jpg'
 import { motion } from 'framer-motion';
 
 const Offer = () => {
@@ -26,13 +28,13 @@ const Offer = () => {
                         </Link>
                         <Link to='/category/amphibians'>
                             <div className='category'>
-                                <div style={{backgroundImage: `url(${reptiles})`}}></div>
+                                <div style={{backgroundImage: `url(${amphibians})`}}></div>
                                 <h2>Amphibians</h2>
                             </div>
                         </Link>
                         <Link to='/category/equipment'>
                             <div className='category'>
-                                <div style={{backgroundImage: `url(${spiders})`}}></div>
+                                <div style={{backgroundImage: `url(${equipment})`}}></div>
                                 <h2>Equipment</h2>
                             </div>
                         </Link>
