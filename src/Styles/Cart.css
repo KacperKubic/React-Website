@@ -1,9 +1,111 @@
-.cart{
+.cartComponent{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    padding-top: 100px;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding-top: 90px;
+}
+
+.cart{
+    width: 100%;
+    height: 90%;
+    padding-top: 10px;
+}
+
+.cart  h1, h3{
+    margin-left: 1%;
+    font-weight: 400;
+}
+
+.cart h3{
+    margin-top: 10px;
+}
+
+.cart hr{
+    width: 90%;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.cartProducts{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.summary{
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary h1{
+    font-weight: 400;
+    margin-left: 1%;
+}
+
+.summary h1{
+    font-weight: 400;
+    margin-left: 1%;
+}
+
+.summary a{
+    margin-left: 1%;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.summary div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+.summary form{
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 0;
+}
+
+.summary select{
+    border: 1px black solid;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.summary option{
+    height: 20px;
+    font-size: 13px;
+}
+
+.summary div p{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 490px){
+    .summary div{
+        flex-direction: column;
+    }
+    .summary div p{
+        margin-right: 0;
+    }
+
+    .summary form{
+        width: 230px;
+        padding: 0;
+    }
+    
+    .summary option{
+        height: 20px;
+        font-size: 10px
+    }
 }

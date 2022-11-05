@@ -17,30 +17,38 @@
     justify-content: center;
 }
 
-.itemList .listItem{
+.product{
     border-radius: 15px;
     width: 300px;
     height: 350px;
     margin: 20px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
-
-.itemList .listItem:hover{
+.product:hover{
     box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
     transform: scale(1.03);
 }
 
-.itemList .listItem div{
+.product div{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
     height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.itemList .listItem .price{
+.product .imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product .imgDiv img{
+    height: 100%;
+    width: 100%;
+}
+
+.product .price{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -50,7 +58,7 @@
 }
 
 
-.itemList button{
+button{
     margin-right: 20px;
     margin-top: 5px;
     background-color: inherit;
@@ -62,13 +70,13 @@
     cursor: pointer;
 }
 
-.itemList .delate:hover{
+.delate:hover{
     color: red;
     cursor: pointer;
 }
 
-.itemList .listItem h3,
-.itemList .listItem p{
+.product h3,
+.product p{
     margin-top: 5px;
     margin-left: 20px;
     width: auto;
@@ -87,13 +95,13 @@
 }
 
 @media screen and (max-width: 340px){
-    .itemList .listItem{
+    .product{
         border-radius: 15px;
         width: 220px;
-        height: 270px;
+        height: 300px;
     }
     
-    .itemList .listItem div{
+    .product div{
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         width: 100%;
@@ -103,8 +111,8 @@
         background-position: center;
     }
     
-    .itemList .listItem h3,
-    .itemList .listItem p{
+    .product h3,
+    .product p{
         margin-top: 0;
         margin-left: 20px;
     }

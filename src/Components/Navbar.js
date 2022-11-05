@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { FaSpider, FaBars, FaTimes, FaShoppingCart } from 'react-icons/fa';
 import '../Styles/Navbar.css';
+import { CartContext } from "../Context";
+import { useEffect } from "react";
 
 const Navbar = () => {
+    const {cart} = useContext(CartContext);
+    const [cartLenght, setCartLenght] = useState(null)
+
     const [toggle, setToggle] = useState(false);
     const handleClick = () => setToggle(!toggle);
     const closeMenu = () => setToggle(false);
+
+    useEffect(()=>{
+        setCartLenght(cart.length);
+    }, [cart])
 
     return (
         <div className='header'>
@@ -34,10 +43,10 @@ const Navbar = () => {
                         <Link to='/contact' onClick={closeMenu}>Contact us</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/cart' onClick={closeMenu}><FaShoppingCart size={25}/></Link>
+                        {cartLenght === 0 && <Link to='/cart' onClick={closeMenu}><FaShoppingCart size={25}/></Link>}
+                        {cartLenght > 0 && <Link to='/cart' onClick={closeMenu}><FaShoppingCart size={25}/>{cartLenght}</Link>}
                     </li>
                 </ul>
-                
             </nav>
         </div>
     );

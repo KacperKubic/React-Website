@@ -29,39 +29,46 @@ import Eq5 from './ItemImages/eq5.jpg'
 export const spiders = [
     {
         name: 'Mexican Redknee Tarantula',
+        type: 'Spider',
         image: Spider1,
-        price: '25.00',
+        price: 25.00,
     },
     {
         name: 'Martinique Pinktoe Tarantula',
+        type: 'Spider',
         image: Spider2,
-        price: '50.00',
+        price: 50.00,
     
     },
     {
         name: 'Ornamental Baboon Tarantula',
+        type: 'Spider',
         image: Spider3,
-        price: '70.00',
+        price: 70.00,
     },
     {
         name: 'Gooty Sapphire Tarantula',
+        type: 'Spider',
         image: Spider4,
-        price: '86.00',
+        price: 86.00,
     },
     {
         name: 'Orange Baboon Tarantula',
+        type: 'Spider',
         image: Spider5,
-        price: '105.00',
+        price: 105.00,
     },
     {
         name: 'Red Rump Tarantula',
+        type: 'Spider',
         image: Spider6,
-        price: '72.00',
+        price: 72.00,
     },
     {
         name: 'Whiteknee Tarantula',
+        type: 'Spider',
         image: Spider7,
-        price: '65.00',
+        price: 65.00,
     },
 ]
 
@@ -69,33 +76,39 @@ export const spiders = [
 export const reptiles = [
     {
         name: 'Bearded dragon',
+        type: 'Reptile',
         image: Reptile1,
-        price: '125.00',
+        price: 125.00,
     },
     {
         name: 'Crested Gecko',
+        type: 'Reptile',
         image: Reptile2,
-        price: '155.00',
+        price: 155.00,
     },
     {
         name: 'Veiled Chameleon',
+        type: 'Reptile',
         image: Reptile3,
-        price: '250.00',
+        price: 250.00,
     },
     {
         name: 'Leopard Gecko',
+        type: 'Reptile',
         image: Reptile4,
-        price: '180.00',
+        price: 180.00,
     },
     {
         name: 'Toke Gecko',
+        type: 'Reptile',
         image: Reptile5,
-        price: '300.00',
+        price: 300.00,
     },
     {
         name: 'Panther Chameleon',
+        type: 'Reptile',
         image: Reptile6,
-        price: '350.00',
+        price: 350.00,
     },
 ]
 
@@ -103,23 +116,27 @@ export const reptiles = [
 export const amphibians = [
     {
         name: "Bell's Horned Frog",
+        type: 'Amphibian',
         image: Amphibian1,
-        price: '185.00',
+        price: 185.00,
     },
     {
         name: 'Chinese fire belly newt',
+        type: 'Amphibian',
         image: Amphibian2,
-        price: '40.00',
+        price: 40.00,
     },
     {
         name: 'Green Tree Frog',
+        type: 'Amphibian',
         image: Amphibian3,
-        price: '240.00',
+        price: 240.00,
     },
     {
         name: 'Blue Poison Dart Frog',
+        type: 'Amphibian',
         image: Amphibian4,
-        price: '220.00',
+        price: 220.00,
     },
 ]
 
@@ -127,27 +144,32 @@ export const amphibians = [
 export const equipment = [
     {
         name: 'Terrarium 30x30x35',
+        type: 'Equipment',
         image: Eq1,
-        price: '70.00',
+        price: 70.00,
     },
     {
         name: 'Terrarium 120x40x40',
+        type: 'Equipment',
         image: Eq2,
-        price: '160.00',
+        price: 160.00,
     },
     {
         name: 'Coco peat 5kg',
+        type: 'Equipment',
         image: Eq3,
-        price: '34.00',
+        price: 34.00,
     },
     {
         name: 'Coconut hideout',
+        type: 'Equipment',
         image: Eq4,
-        price: '32.00',
+        price: 32.00,
     },
     {
         name: 'Heating lightbulb 50W',
+        type: 'Equipment',
         image: Eq5,
-        price: '19.00',
+        price: 19.00,
     },
 ]
