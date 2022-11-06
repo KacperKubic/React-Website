@@ -11,18 +11,48 @@ const Cart = () => {
     const {cart} = useContext(CartContext);
     const [total, setTotal] = useState(0);
     const [shipping, setShipping] = useState('');
+    const [shippingPrice, setShippingPrice] = useState(0)
 
     useEffect(()=>{
         let totalPrice = 0;
         cart.forEach(product => {totalPrice += product.price})
         setTotal(totalPrice);
+        console.log(shippingPrice)
+        console.log(total)
 
         if(shipping === 'default'){
-            setTotal(total + 15.99)
+            if(shippingPrice === 0){
+                setTotal(total + 15.99)
+                setShippingPrice(15.99)
+            }else if(shippingPrice === 24.00){
+                setTotal((total - 24.00) + 15.99)
+                setShippingPrice(15.99)
+            }else if(shippingPrice === 22.49){
+                setTotal((total-22.49) + 15.99)
+                setShippingPrice(15.99)
+            }
         }else if(shipping === 'quick'){
-            setTotal(total + 24) 
+            if(shippingPrice === 0){
+                setTotal(total + 24.00)
+                setShippingPrice(24.00)
+            }else if(shippingPrice === 15.99){
+                setTotal((total - 15.99) + 24.00)
+                setShippingPrice(24.00)
+            }else if(shippingPrice === 22.49){
+                setTotal((total-22.49) + 24.00)
+                setShippingPrice(24.00)
+            }
         }else if(shipping === 'insurance'){
-            setTotal(total + 22.49)
+            if(shippingPrice === 0){
+                setTotal(total + 22.49)
+                setShippingPrice(22.49)
+            }else if(shippingPrice === 15.99){
+                setTotal((total - 15.99) + 22.49)
+                setShippingPrice(22.49)
+            }else if(shippingPrice === 24.00){
+                setTotal((total-24.00) + 22.49)
+                setShippingPrice(22.49)
+            }
         }
     }, [cart, shipping])
 
