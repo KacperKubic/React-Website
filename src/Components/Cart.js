@@ -53,6 +53,17 @@ const Cart = () => {
                 setTotal((total-24.00) + 22.49)
                 setShippingPrice(22.49)
             }
+        }else if(shipping === ""){
+            if(shippingPrice === 15.99){
+                setTotal(total - 15.99)
+                setShippingPrice(0)
+            }else if(shippingPrice === 24.00){
+                setTotal(total - 24.00)
+                setShippingPrice(0)
+            }else if(shippingPrice === 22.49){
+                setTotal(total-22.49)
+                setShippingPrice(0)
+            }
         }
     }, [cart, shipping])
 
@@ -74,7 +85,7 @@ const Cart = () => {
                 <h1>Summary:</h1>
                 <form>
                     <select value={shipping} onChange={(e)=>setShipping(e.target.value)}>
-                        <option value="" disabled defaultValue>Select shipping option</option>
+                        <option value="" defaultValue>Select shipping option</option>
                         <option value="default">Default shipping: 15.99 PLN </option>
                         <option value="quick">{`Quick shipping (in your home within 24h): 24.00 PLN`}</option>
                         <option value="insurance">Package with extra insurance: 22.49 PLN</option>
